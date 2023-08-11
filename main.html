@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/sass/style.css">
     <title>Museum</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header__wrapper">
             <a class="logo">
                 <img class="logo__img" src="./src/img/logo/logo.svg" alt="museum logo">
-                <span class="logo_text">Louvre</span>
+                <h1 class="logo_text">Louvre</h1>
             </a>
             <nav class="header__navigation">
                 <ul class="navigation">
@@ -28,28 +31,36 @@
         <section class="welcome">
             <div class="wrapper welcome__wrapper">
                 <div class="welcome__content">
-                    <h1 class="welcome__title">Welcome to the Louvre</h1>
+                    <h2 class="welcome__title">Welcome<br>to the Louvre</h2>
                     <p class="welcome__description">From the castle to the museum</p>
-                    <button class="button button_colored welcome__button" type="button">Discover the Louvre</button>
+                    <button class="button button_rounded" type="button">Discover the Louvre</button>
                 </div>
-                <div class="slider welcome__slider">
-                    <img class="slider__img" src="./src/img/welcome-slider/1.jpg" width="1000" height="750" alt="welcome image 1">
-                    <div class="pagination slider__pagination">
-                        <p class="pagination__numbers"><span class="pagination__current">01</span>&nbsp;|&nbsp;05</p>
-                        <div class="pagination-buttons">
-                            <button class="pagination-buttons__item pagination-buttons__item_active"></button>
-                            <button class="pagination-buttons__item"></button>
-                            <button class="pagination-buttons__item"></button>
-                            <button class="pagination-buttons__item"></button>
-                            <button class="pagination-buttons__item"></button>
+                <div class="slider">
+                    <ul class="slider__images">
+                        <li class="slider__item slider__item_active">
+                            <img class="slider__img" src="./src/img/welcome-slider/1.jpg" width="1000" height="750" alt="welcome image 1">
+                        </li>
+                        <li class="slider__item"></li>
+                        <li class="slider__item"></li>
+                        <li class="slider__item"></li>
+                        <li class="slider__item"></li>
+                    </ul>
+                    <div class="carousel slider__carousel">
+                        <p class="carousel__numbers"><span class="carousel__current">01</span>&nbsp;|&nbsp;05</p>
+                        <div class="carousel-buttons">
+                            <button class="carousel__item carousel__item_active"></button>
+                            <button class="carousel__item"></button>
+                            <button class="carousel__item"></button>
+                            <button class="carousel__item"></button>
+                            <button class="carousel__item"></button>
                         </div>
-                        <div class="pagination-arrows">
-                            <button class="pagination-arrows__item">
-                                <span class="pagination-arrows__left"></span>
-                            </button>
-                            <button class="pagination-arrows__item">
-                                <span class="pagination-arrows__right"></span>
-                            </button>
+                        <div class="carousel-arrows">
+                            <div class="carousel-arrows__item" tabindex="0" role="button" aria-label="previous slide">
+                                <span class="carousel-arrow carousel-arrow_left"></span>
+                            </div>
+                            <div class="carousel-arrows__item" tabindex="0" role="button" aria-label="next slide">
+                                <span class="carousel-arrow carousel-arrow_right"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -57,6 +68,7 @@
         </section>
         <section class="virtual-tour">
             <div class="wrapper">
+                <span class="carousel-arrow carousel-arrow_right"></span>
                 <h2 class="virtual-tour__title">Virtual tour</h2>
                 <ul class="layout-3-column">
                     <li class="tour">
@@ -225,7 +237,7 @@
                 <img class="tickets__image" src="src/img/tickets.jpg" width="720" height="550">
                 <form class="tickets-form" action="#" method="post">
                     <fieldset class="tickets-form__item">
-                        <h5 class="tickets-form__title">Ticket Type</h5>
+                        <strong class="tickets-form__title">Ticket Type</strong>
                         <div class="tickets-form__type">
                             <input class="visually-hidden filter-input-radio" type="radio" id="permanent-exhibition" name="ticket-type"
                                 value="Permanent exhibition" checked>
@@ -242,7 +254,7 @@
                         </div>
                     </fieldset>
                     <fieldset class="tickets-form__item">
-                        <h5 class="tickets-form__title">Amount</h5>
+                        <strong class="tickets-form__title">Amount</strong>
                         <ul class="tickets-form__amount">
                             <li class="amount">
                                 <p class="amount__title">Basic 18+</p>
@@ -262,7 +274,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <p class="tickets-form__total">Total &euro; <span class="tickets-form__total-number">220</span></p>
+                    <strong class="tickets-form__total">Total &euro; <span class="tickets-form__total-number">220</span></strong>
                     <button class="button button_uncolored tickets-form__button" type="button">Discover the Louvre</button>
                 </form>
             </div>
@@ -275,7 +287,7 @@
                 <h2 class="contacts__title">Contacts</h2>
                 <div class="layout-2-column">
                     <div class="contact-content">
-                        <h5 class="contact-content__title">Palais Royal Musee du Louvre</h5>
+                        <h4 class="contact-content__title">Palais Royal Musee du Louvre</h4>
                         <div class="contact-content__links">
                             <p class="contact-content__text">address:<a class="contact-content__link" href="#">75001 Paris, France</a></p>
                             <p class="contact-content__text">phone:<a class="contact-content__link" href="tel:330240205050">+33(0) 1 40 20 50 50</a></p>

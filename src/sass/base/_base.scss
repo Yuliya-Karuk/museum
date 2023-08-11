@@ -1,0 +1,61 @@
+
+
+// @include font-face("Forum", "Forum-Regular", "400", "normal");
+// @include font-face("Roboto", "Roboto-Regular", "400", "normal");
+// @include font-face("Roboto", "Roboto-Light", "300", "normal");
+// @include font-face("Roboto", "Roboto-Medium", "500", "normal");
+// @include font-face("Roboto", "Roboto-Bold", "700", "normal");
+// @include font-face("Roboto", "Roboto-Thin", "100", "normal");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 2.2rem;
+}
+
+h1 {
+    @include font("Forum", 2.8rem, 400, normal, 0.5rem, uppercase);
+    color: $color-bg-light;
+}
+
+h2 {
+    @include font("Forum", 8rem, 400, 9rem, 0.5rem, uppercase);
+    color: $color-font-gold;
+}
+
+h3 {
+    @include font("Forum", 3.2rem, 400, normal, 0.5rem, uppercase);
+    color: $color-font-black;
+}
+
+h4 {
+    @include font("Roboto", 2.8rem, 500, normal);
+    color: $color-font-black;
+}
+
+strong {
+    @include font("Roboto", 2.8rem, 700, normal, 0.165rem);
+    color: $color-font-black;
+}
+
+h5 {
+    @include font("Roboto", 1.8rem, 400, 3.85rem);
+    color: $color-bg-light;
+}
+
+img {
+    height: auto;
+}
+
+p {
+    @include font("Roboto", 2rem, 300, 3.5rem);
+    color: $color-bg-light;
+}

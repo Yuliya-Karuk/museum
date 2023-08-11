@@ -1,0 +1,19 @@
+.navigation {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    column-gap: 55px;
+}
+
+.navigation__link {
+    @include font("Roboto", 2.2rem, 100, normal, 0.2rem);
+    color: $color-bg-light;
+    @extend %transition;
+    &:hover {
+        color: $color-font-gold;
+    }
+    &:active {
+        color: $color-font-gold;
+    }
+}

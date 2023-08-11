@@ -1,0 +1,35 @@
+.welcome {
+    padding-bottom: 60px;
+    background-color: $color-bg-dark;
+}
+
+.welcome__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome__content {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 10;
+
+    width: 600px;
+}
+
+.welcome__title {
+    margin-bottom: 2.5rem;
+
+    color: $color-bg-light;
+    line-height: 9rem;
+}
+
+.welcome__description {
+    margin-bottom: 5rem;
+
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+}

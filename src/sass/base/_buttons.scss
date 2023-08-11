@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-bg-light;
+    cursor: pointer;
+    @extend %transition;
+
+    &_rounded {
+        padding: 2.4rem 6.6rem;
+        @include font("Roboto", 2.4rem, 400, normal, 0.2rem);
+        border-radius: 1rem;
+        background: $color-bg-primary;
+        &:hover {
+            background: $color-font-gold;
+        }
+    }
+
+    &_square {
+        padding: 2.4rem 3.8rem;
+        @include font("Roboto", 2.2rem, 300, normal, 0.2rem);
+        border-radius: 2px;
+        background: $color-bg-dark;
+        &:hover {
+            color: $color-bg-dark;
+            background: $color-font-gold;
+        }
+    }
+
+}

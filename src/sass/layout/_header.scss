@@ -1,0 +1,10 @@
+.header {
+    background-color: $color-bg-dark;
+    padding: 58px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
