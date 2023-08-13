@@ -7,9 +7,9 @@
     @extend %transition;
 
     &_rounded {
-        padding: 2.4rem 6.6rem;
-        @include font("Roboto", 2.4rem, 400, normal, 0.2rem);
-        border-radius: 1rem;
+        padding: 23px 66px;
+        @include font("Roboto", 2.2rem, 300, normal, 0.2rem);
+        border-radius: px10;
         background: $color-bg-primary;
         &:hover {
             background: $color-font-gold;
@@ -17,7 +17,7 @@
     }
 
     &_square {
-        padding: 2.4rem 3.8rem;
+        padding: 24px 38px;
         @include font("Roboto", 2.2rem, 300, normal, 0.2rem);
         border-radius: 2px;
         background: $color-bg-dark;

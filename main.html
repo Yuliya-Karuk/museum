@@ -46,7 +46,10 @@
                         <li class="slider__item"></li>
                     </ul>
                     <div class="carousel slider__carousel">
-                        <p class="carousel__numbers"><span class="carousel__current">01</span>&nbsp;|&nbsp;05</p>
+                        <div class="carousel__numbers">
+                            <span class="carousel__number carousel__number__current">01</span>
+                            <span class="carousel__number carousel__number__all">&nbsp;&nbsp;|&nbsp;&nbsp;05</span>
+                        </div>
                         <div class="carousel-buttons">
                             <button class="carousel__item carousel__item_active"></button>
                             <button class="carousel__item"></button>
@@ -67,10 +70,9 @@
             </div>
         </section>
         <section class="virtual-tour">
-            <div class="wrapper">
-                <span class="carousel-arrow carousel-arrow_right"></span>
+            <div class="wrapper virtual-tour__wrapper">
                 <h2 class="virtual-tour__title">Virtual tour</h2>
-                <ul class="layout-3-column">
+                <ul class="layout-3-column virtual__layout">
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/1.jpg" width="440" height="285">
@@ -82,7 +84,7 @@
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/2.jpg" width="440" height="285">
-                            <h3 class="tour__title">Royal Palace</h3>
+                            <h3 class="tour__title">Denon Wing</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
@@ -90,7 +92,7 @@
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/3.jpg" width="440" height="285">
-                            <h3 class="tour__title">Royal Palace</h3>
+                            <h3 class="tour__title">Colonnade Perrault</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
@@ -98,7 +100,7 @@
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/4.jpg" width="440" height="285">
-                            <h3 class="tour__title">Royal Palace</h3>
+                            <h3 class="tour__title">Greek hall</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
@@ -106,7 +108,7 @@
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/5.jpg" width="440" height="285">
-                            <h3 class="tour__title">Royal Palace</h3>
+                            <h3 class="tour__title">Mona Lisa</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
@@ -114,7 +116,7 @@
                     <li class="tour">
                         <a class="tour__link" href="">
                             <img class="tour__img" src="./src/img/tour/6.jpg" width="440" height="285">
-                            <h3 class="tour__title">Royal Palace</h3>
+                            <h3 class="tour__title">Night Palace</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
@@ -123,17 +125,25 @@
             </div>
         </section>
         <section class="picture-explore">
-            <div class="wrapper">
-                <div class="layout-2-column">
+            <div class="wrapper picture-explore__wrapper">
+                <div class="picture-explore__layout">
                     <div class="picture-explore__content">
                         <h2 class="picture-explore__title">Picture explore</h2>
                         <p class="picture-explore__desc">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-                        <p class="picture-explore__desc">It was cleaned in 1984 to remove a <span calss="picture-explore__desc_colored">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th
+                        <p class="picture-explore__desc">It was cleaned in 1984 to remove a <span class="picture-explore__desc_colored">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th
                         century.</p>
                         <p class="picture-explore__desc">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked
                         different.</p>
                     </div>
-                    <img class="picture-explore__img" src="./src/img/picture_explore_black.png">
+                    <div class="picture-slider picture-explore__slider">
+                        <img class="picture-slider__img picture-slider__img_before" src="./src/img/picture_before.jpg" width="720" height="700" alt="colored picture">
+                        <div class="picture-slider__wrapper">
+                            <img class="picture-slider__img picture-slider__img_after" src="./src/img/picture_after.jpg" width="720" height="700" alt="colored picture">
+                        </div>
+                        <div class="picture-slider__button">
+                            <span class="picture-slider__icon"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

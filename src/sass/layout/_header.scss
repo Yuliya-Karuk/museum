@@ -1,9 +1,10 @@
 .header {
     background-color: $color-bg-dark;
-    padding: 58px 0;
+    padding: 60px 0;
 }
 
 .header__wrapper {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,0 +1,37 @@
+.picture-explore {
+    background-color: $color-bg-dark;
+}
+
+.picture-explore__layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picture-explore__content {
+    width: calc(100% - 782px);
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-explore__title {
+    color: $color-bg-light;
+    @extend %section-title;
+}
+
+.picture-explore__desc {
+    @include font("Roboto", 2.2rem, 300, 3.85rem);
+    color: $color-bg-light;
+    margin-bottom: 25px;
+    &_colored {
+        color: $color-font-picture;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.picture-explore__slider {
+    margin-top: 15px;
+}
+

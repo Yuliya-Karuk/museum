@@ -2,12 +2,21 @@
     position: absolute;
     bottom: -60px;
     width: 600px;
-    padding: 52px 74px;
+    padding: 40px 74px;
 
     display: flex;
-    column-gap: 60px;
+    column-gap: 55px;
 
     background-color: $color-bg-dark;
+}
+
+.carousel__numbers {
+    display: flex;
+}
+
+.carousel__number {
+    @include font("Roboto", 2.2rem, 400, 4rem);
+    color: $color-bg-light;
 }
 
 .carousel-buttons {
@@ -26,8 +35,10 @@
 }
 
 .carousel-arrows {
+    margin-left: 5px;
     display: flex;
     align-items: center;
+    column-gap: 10px;
 }
 
 .carousel-arrow {

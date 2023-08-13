@@ -8,6 +8,7 @@
 
     display: flex;
     justify-content: flex-end;
+    padding: 0;
 }
 
 .welcome__content {
@@ -20,16 +21,16 @@
 }
 
 .welcome__title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 25px;
 
     color: $color-bg-light;
     line-height: 9rem;
 }
 
 .welcome__description {
-    margin-bottom: 5rem;
+    margin-bottom: 75px;
 
-    font-size: 24px;
+    font-size: 2.8rem;
     line-height: normal;
     letter-spacing: 0.2rem;
 }
