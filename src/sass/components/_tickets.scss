@@ -1,0 +1,89 @@
+.tickets__title {
+    @extend %section-title;
+}
+
+.tickets__layout {
+    display: flex;
+    column-gap: 60px;
+}
+
+.tickets-form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tickets-form__title {
+    display: block;
+    margin-bottom: 50px;
+    &_amount {
+        text-align: end;
+        margin-bottom: 25px;
+    }
+}
+
+.tickets-form__fieldset {
+    &_type {
+        width: 270px;
+    }
+    &_amount {
+        width: 150px;
+        margin-bottom: 40px;
+    }
+}
+
+.tickets-form__type {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.tickets-form__amount {
+    margin-bottom: 10px;
+}
+
+.amount-block {
+    width: 150px;
+    height: 49px;
+    padding: 6px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid $color-font-black;
+}
+
+.tickets-form__label {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    @include font("Roboto", 2.2rem, 300, normal, normal);
+    color: $color-font-black;
+    &_amount {
+        margin-bottom: 15px;
+        padding-left: 0;
+        text-align: start;
+    }
+}
+
+.amount-block__button {
+    @include font("Roboto", 3.2rem, 400, normal, normal);
+    color: $color-font-black;
+}
+
+.amount-block__number {
+    width: 50px;
+    text-align: center;
+}
+
+.tickets-form__total {
+    margin-bottom: 60px;
+    flex-basis: 100%;
+    text-align: end;
+    letter-spacing: 0.165rem;
+}
+
+.tickets-form__button {
+    margin-left: auto;
+}

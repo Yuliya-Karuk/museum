@@ -149,69 +149,100 @@
         </section>
         <section class="video-journey">
             <div class="wrapper">
-                <div class="layout-2-column video-journey__content">
+                <div class="video-journey__content">
                     <h2 class="video-journey__title">Video journey</h2>
                     <p class="video-journey__desc">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
                 <div class="video-player">
-                    <div class="video-player__poster"></div>
-                    <video class="video-player__video" src=""></video>
-                    <div class="video-player__button"></div>
+                    <video class="video-player__video" poster="src/img/video_player/poster0.jpg">
+                        <source src="src/video/video0.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-player__middle-button"></div>
                     <div class="player-controls">
-                        <button class="button-play" type="button">
-                            <span class="button-play__play"></span>
-                            <span class="button-play__pause"></span>
+                        <button class="player-controls__play" type="button">
+                            <span class="player-controls__button player-controls__button_play"></span>
+                            <span class="player-controls__button player-controls__button_pause"></span>
                         </button>
-                        <div class="video-timer">
-                            <input class="video-timer__input" type="range" name="timer" min="0" max="100" step="1" value="0">
+                        <div class="player-controls__timer">
+                            <input class="player-controls__range player-controls__range_timer" type="range" name="timer" min="0" max="100" step="1" value="0">
                         </div>
-                        <button class="button-volume" type="button">
-                            <span class="button-volume__unmute"></span>
-                            <span class="button-volume__mute"></span>
+                        <button class="player-controls__mute" type="button">
+                            <span class="player-controls__button player-controls__button_unmute"></span>
+                            <span class="player-controls__button player-controls__button_mute"></span>
                         </button>
-                        <div class="video-volume">
-                            <input class="video-volume__input" type="range" name="volume" min="0" max="1" step="0.1" value="0.5">
+                        <div class="player-controls__volume">
+                            <input class="player-controls__range player-controls__range_volume" type="range" name="volume" min="0" max="1" step="0.1" value="0.5">
                         </div>
-                        <button class="button-screen" type="button">
-                            <span class="button-volume__fullscreen-svg"></span>
-                            <span class="button-volume__fullscreen-svg"></span>
+                        <button class="player-controls__screen" type="button">
+                            <span class="player-controls__button player-controls__button_fullscreen"></span>
+                            <span class="player-controls__button player-controls__button_smallscreen"></span>
                         </button>
                     </div>
                 </div>
                 <ul class="video-slider">
                     <li class="video-slider__item">
-                        <video class="video-slider__video" src="video/video_paris.mp4"></video>
+                        <video class="video-slider__video" poster="src/img/video_player/poster3.jpg">
+                            <source src="src/video/video3.mp4" type="video/mp4">
+                        </video>
                         <div class="video-slider__title">
                             <img class="video-slider__icon" src="src/img/video_player/video_logo.png" width="40" height="40" alt="video logo">
-                            <h5 class="video-slider__name">Exposition - Le Corps et l’Ame. De Dona...</h5>
+                            <a class="video-slider__name" target="_blank" href="https://youtu.be/aWmJ5DgyWPI">Exposition - Le Corps et l'Âme. De Donatello à Michel-Ange. Sculptures italiennes de la Renaissance</a>
                             <span class="video-slider__setting"></span>
                         </div>
-                        <div class="video-slider__button"></div>
+                        <button class="video-slider__button"></button>
                     </li>
                     <li class="video-slider__item">
-                        <video class="video-slider__video" src="video/video_paris.mp4"></video>
+                        <video class="video-slider__video" poster="src/img/video_player/poster1.jpg">
+                            <source src="src/video/video1.mp4" type="video/mp4">
+                        </video>
                         <div class="video-slider__title">
                             <img class="video-slider__icon" src="src/img/video_player/video_logo.png" width="40" height="40"
                                 alt="video logo">
-                            <h5 class="video-slider__name">Exposition - Le Corps et l’Ame. De Dona...</h5>
+                            <a class="video-slider__name" target="_blank" href="https://youtu.be/NOhDysLnTvY">Au Louvre ! La Venus de Milo</a>
                             <span class="video-slider__setting"></span>
                         </div>
-                        <div class="video-slider__button"></div>
+                        <button class="video-slider__button"></button>
                     </li>
                     <li class="video-slider__item">
-                        <video class="video-slider__video" src="video/video_paris.mp4"></video>
+                        <video class="video-slider__video" poster="src/img/video_player/poster2.jpg">
+                            <source src="src/video/video2.mp4" type="video/mp4">
+                        </video>
                         <div class="video-slider__title">
                             <img class="video-slider__icon" src="src/img/video_player/video_logo.png" width="40" height="40"
                                 alt="video logo">
-                            <h5 class="video-slider__name">Exposition - Le Corps et l’Ame. De Dona...</h5>
+                            <a class="video-slider__name" target="_blank" href="https://youtu.be/Vi5D6FKhRmo">Promenade dans les collections mésopotamiennes avec Ariane Thomas</a>
                             <span class="video-slider__setting"></span>
                         </div>
-                        <div class="video-slider__button"></div>
+                        <button class="video-slider__button"></button>
+                    </li>
+                    <li class="video-slider__item">
+                        <video class="video-slider__video" poster="src/img/video_player/poster4.jpg">
+                            <source src="src/video/video4.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-slider__title">
+                            <img class="video-slider__icon" src="src/img/video_player/video_logo.png" width="40" height="40"
+                                alt="video logo">
+                            <a class="video-slider__name" target="_blank" href="https://youtu.be/2OR0OCr6uRE">Petits contes de Printemps - La ruse du Renard</a>
+                            <span class="video-slider__setting"></span>
+                        </div>
+                        <button class="video-slider__button"></button>
+                    </li>
+                    <li class="video-slider__item">
+                        <video class="video-slider__video" poster="src/img/video_player/poster0.jpg">
+                            <source src="src/video/video0.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-slider__title">
+                            <img class="video-slider__icon" src="src/img/video_player/video_logo.png" width="40" height="40"
+                                alt="video logo">
+                            <a class="video-slider__name" target="_blank" href="https://youtu.be/zp1BXPX8jcU">Welcome to the Louvre - Bienvenue au Louvre - Musée du Louvre</a>
+                            <span class="video-slider__setting"></span>
+                        </div>
+                        <button class="video-slider__button"></button>
                     </li>
                 </ul>
                 <div class="video-pagination">
                     <button class="video-pagination__item video-pagination__item_left"></button>
-                    <button class="video-pagination__item video-pagination__active"></button>
+                    <button class="video-pagination__item video-pagination__item_active"></button>
                     <button class="video-pagination__item"></button>
                     <button class="video-pagination__item"></button>
                     <button class="video-pagination__item"></button>
@@ -221,72 +252,71 @@
             </div>
         </section>
         <section class="gallery">
-            <div class="wrapper">
+            <div class="wrapper gallery__wrapper">
                 <h2 class="gallery__title">Art Gallery</h2>
-                <div class="layout-3-column">
-                    <img class="gallery__img" src="src/img/gallery/galery1.jpg" alt="gallery image">
+                <div class="gallery__layout">
                     <img class="gallery__img" src="src/img/gallery/galery2.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery3.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery4.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery5.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery6.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery7.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery8.jpg" alt="gallery image">
                     <img class="gallery__img" src="src/img/gallery/galery9.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery10.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery4.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery6.jpg" alt="gallery image">
                     <img class="gallery__img" src="src/img/gallery/galery11.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery12.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery1.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery8.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery3.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery5.jpg" alt="gallery image">
                     <img class="gallery__img" src="src/img/gallery/galery13.jpg" alt="gallery image">
-                    <img class="gallery__img" src="src/img/gallery/galery14.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery7.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery10.jpg" alt="gallery image">
                     <img class="gallery__img" src="src/img/gallery/galery15.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery12.jpg" alt="gallery image">
+                    <img class="gallery__img" src="src/img/gallery/galery14.jpg" alt="gallery image">
                 </div>
+                <div class="gallery__overlay"></div>
             </div>
         </section>
         <section class="tickets">
             <div class="wrapper">
-                <img class="tickets__image" src="src/img/tickets.jpg" width="720" height="550">
-                <form class="tickets-form" action="#" method="post">
-                    <fieldset class="tickets-form__item">
-                        <strong class="tickets-form__title">Ticket Type</strong>
-                        <div class="tickets-form__type">
-                            <input class="visually-hidden filter-input-radio" type="radio" id="permanent-exhibition" name="ticket-type"
+                <h2 class="tickets__title">BUY TICKETS</h2>
+                <div class="tickets__layout">
+                    <img class="tickets__image" src="src/img/tickets.jpg" width="720" height="550">
+                    <form class="tickets-form" action="#" method="post">
+                        <fieldset class="tickets-form__fieldset tickets-form__fieldset_type">
+                            <strong class="tickets-form__title">Ticket Type</strong>
+                            <div class="tickets-form__type">
+                                <input class="visually-hidden" type="radio" id="permanent-exhibition" name="ticket-type"
                                 value="Permanent exhibition" checked>
-                            <label for="permanent-exhibition">Permanent exhibition</label>
-                            <input class="visually-hidden filter-input-radio" type="radio" id="permanent-exhibition" name="ticket-type"
-                                value="Permanent exhibition" checked>
-                            <label for="permanent-exhibition">Permanent exhibition</label>
-                            <input class="visually-hidden filter-input-radio" type="radio" id="temporary-exhibition" name="ticket-type"
+                                <label class="tickets-form__label" for="permanent-exhibition">Permanent exhibition</label>
+                                <input class="visually-hidden" type="radio" id="temporary-exhibition" name="ticket-type"
                                 value="Temporary exhibition">
-                            <label for="temporary-exhibition">Temporary exhibition</label>
-                            <input class="visually-hidden filter-input-radio" type="radio" id="combined-admission" name="ticket-type"
+                                <label class="tickets-form__label" for="temporary-exhibition">Temporary exhibition</label>
+                                <input class="visually-hidden" type="radio" id="combined-admission" name="ticket-type"
                                 value="Combined Admission">
-                            <label for="combined-admission">Combined Admission</label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="tickets-form__item">
-                        <strong class="tickets-form__title">Amount</strong>
-                        <ul class="tickets-form__amount">
-                            <li class="amount">
-                                <p class="amount__title">Basic 18+</p>
-                                <div class="amount__input">
-                                    <button class="amount__button amount__button_minus" type="button"></button>
-                                    <span class="amount__number">1</span>
-                                    <button class="amount__button amount__button_plus" type="button"></button>
+                                <label class="tickets-form__label" for="combined-admission">Combined Admission</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="tickets-form__fieldset tickets-form__fieldset_amount">
+                            <strong class="tickets-form__title tickets-form__title_amount">Amount</strong>
+                            <div class="tickets-form__amount">
+                                <label class="tickets-form__label tickets-form__label_amount" for="basic-amount">Basic 18+</label>
+                                <div class="amount-block">
+                                    <button class="amount-block__button amount-block__button_minus" type="button">&minus;</button>
+                                    <input class="amount-block__number" type="number" id="basic-amount" name="basic tickets amount" value="1">
+                                    <button class="amount-block__button amount-block__button_plus" type="button">+</button>
                                 </div>
-                            </li>
-                            <li class="amount">
-                                <p class="amount__title">Senior 65+</p>
-                                <div class="amount__input">
-                                    <button class="amount__button amount__button_minus" type="button"></button>
-                                    <span class="amount__number">1</span>
-                                    <button class="amount__button amount__button_plus" type="button"></button>
+                            </div>
+                            <div class="tickets-form__amount">
+                                <label class="tickets-form__label tickets-form__label_amount" for="senior-amount">Senior 65+</label>
+                                <div class="amount-block">
+                                    <button class="amount-block__button amount-block__button_minus" type="button">&minus;</button>
+                                    <input class="amount-block__number" type="number" id="senior-amount" name="senior tickets amount">
+                                    <button class="amount-block__button amount-block__button_plus" type="button">+</button>
                                 </div>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <strong class="tickets-form__total">Total &euro; <span class="tickets-form__total-number">220</span></strong>
-                    <button class="button button_uncolored tickets-form__button" type="button">Discover the Louvre</button>
-                </form>
+                            </div>
+                        </fieldset>
+                        <strong class="tickets-form__total">Total&nbsp;&euro;<span class="tickets-form__total-number">220</span></strong>
+                        <button class="button button_square tickets-form__button" type="button">Buy Now</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="parallax">

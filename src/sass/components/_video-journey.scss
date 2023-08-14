@@ -1,0 +1,16 @@
+.video-journey {
+    background-color: $color-bg-light;
+}
+
+.video-journey__content {
+    margin-bottom: 75px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+}
+
+.video-journey__desc {
+    width: 49.9%;
+    color: $color-font-black;
+}

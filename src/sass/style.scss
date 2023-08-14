@@ -8,7 +8,8 @@
 // Base
 @import "base/base";
 @import "base/logo";
-@import "base//buttons";
+@import "base/buttons";
+@import "base/inputs";
 
 // Layouts
 @import "layout/wrapper";
@@ -24,3 +25,8 @@
 @import "components/tour";
 @import "components/picture";
 @import "components/picture-slider";
+@import "components/video-journey";
+@import "components/video-player";
+@import "components/video-slider";
+@import "components/gallery";
+@import "components/tickets";
