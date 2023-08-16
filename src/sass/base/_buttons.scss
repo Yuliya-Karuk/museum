@@ -9,7 +9,7 @@
     &_rounded {
         padding: 23px 66px;
         @include font("Roboto", 2.2rem, 300, normal, 0.2rem);
-        border-radius: px10;
+        border-radius: 10px;
         background: $color-bg-primary;
         &:hover {
             background: $color-font-gold;

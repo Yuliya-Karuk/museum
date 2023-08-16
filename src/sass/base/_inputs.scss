@@ -3,9 +3,27 @@ input[type=number] {
     @include font("Roboto", 2.2rem, 300, normal, normal);
     color: $color-font-black;
     border: none;
+    @extend %transition;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    &:hover {
+        text-shadow: 0 0 1px $color-bg-dark;
+    }
+    &:focus {
+        background-color: $color-input-hover;
+    }
 }
 
-input[type=radio]:checked+label:before,
+input[type=radio] + label {
+    @extend %transition;
+    &:hover {
+        text-shadow: 0 0 2px $color-bg-dark;
+    }
+}
+
+input[type=radio]:checked + label:before,
 input[type=radio]:not(:checked) + label:before {
     content: "";
     position: absolute;

@@ -34,38 +34,16 @@
 }
 
 .player-controls__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-
-    background-color: $color-font-black;
-    &_play {
-        width: 23px;
-        background: no-repeat center url(../img/video_player/play.png);
-    }
-    &_pause {
-        width: 21px;
-        background: no-repeat center url(../img/video_player/pause.png);
-        display: none;
-    }
-    &_unmute {
-        width: 36px;
-        background: no-repeat center url(../img/video_player/volume.png);
-    }
-    &_mute {
-        width: 36px;
-        background: no-repeat center url(../img/video_player/mute.png);
-        display: none;
-    }
-    &_fullscreen {
-        width: 36px;
-        background: no-repeat center url(../img/video_player/fullscreen.png);
-    }
-    &_smallscreen {
-        width: 36px;
-        background: no-repeat center url(../img/video_player/smallscreen.png);
-        display: none;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 36px;
+    cursor: pointer;
+    &:hover {
+        .svg-path {
+            @extend %transition;
+            fill: $color-video-hover;
+        }
     }
 }
 

@@ -18,14 +18,15 @@ p {
 
 button {
     padding: 0;
-
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 a {
     display: block;
     text-decoration: none;
+    color: inherit;
     cursor: pointer;
 }
 

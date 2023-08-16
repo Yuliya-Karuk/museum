@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="src/img/icons/favicon.ico" type="image/ico" sizes="32x32">
     <link rel="stylesheet" href="./src/sass/style.css">
     <title>Museum</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a class="logo">
-                <img class="logo__img" src="./src/img/logo/logo.svg" alt="museum logo">
+            <a class="logo" href="#">
+                <img class="logo__img" src="./src/img/logo/logo.svg" width="50" height="34" alt="museum logo">
                 <h1 class="logo_text">Louvre</h1>
             </a>
             <nav class="header__navigation">
@@ -33,7 +34,7 @@
                 <div class="welcome__content">
                     <h2 class="welcome__title">Welcome<br>to the Louvre</h2>
                     <p class="welcome__description">From the castle to the museum</p>
-                    <button class="button button_rounded" type="button">Discover the Louvre</button>
+                    <a class="button button_rounded welcome__button" href="discover.html" target="_blank">Discover the Louvre</a>
                 </div>
                 <div class="slider">
                     <ul class="slider__images">
@@ -50,20 +51,20 @@
                             <span class="carousel__number carousel__number__current">01</span>
                             <span class="carousel__number carousel__number__all">&nbsp;&nbsp;|&nbsp;&nbsp;05</span>
                         </div>
-                        <div class="carousel-buttons">
-                            <button class="carousel__item carousel__item_active"></button>
-                            <button class="carousel__item"></button>
-                            <button class="carousel__item"></button>
-                            <button class="carousel__item"></button>
-                            <button class="carousel__item"></button>
+                        <div class="carousel__buttons">
+                            <button class="carousel__item carousel__item_active" type="button" disabled></button>
+                            <button class="carousel__item" type="button"></button>
+                            <button class="carousel__item" type="button"></button>
+                            <button class="carousel__item" type="button"></button>
+                            <button class="carousel__item" type="button"></button>
                         </div>
-                        <div class="carousel-arrows">
-                            <div class="carousel-arrows__item" tabindex="0" role="button" aria-label="previous slide">
-                                <span class="carousel-arrow carousel-arrow_left"></span>
-                            </div>
-                            <div class="carousel-arrows__item" tabindex="0" role="button" aria-label="next slide">
-                                <span class="carousel-arrow carousel-arrow_right"></span>
-                            </div>
+                        <div class="carousel__arrows">
+                            <button class="carousel-arrow__item carousel-arrow__item_left" type="button">
+                                <object type="image/svg+xml" data="src/img/icons/arrow_left.svg" width="40"></object>
+                            </button>
+                            <button class="carousel-arrows__item  carousel-arrow__item_right" type="button">
+                                <object type="image/svg+xml" data="src/img/icons/arrow_right.svg" width="40"></object>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -74,48 +75,60 @@
                 <h2 class="virtual-tour__title">Virtual tour</h2>
                 <ul class="layout-3-column virtual__layout">
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/1.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour1.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/1.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Royal Palace</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
                     </li>
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/2.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour2.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/2.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Denon Wing</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
                     </li>
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/3.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour3.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/3.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Colonnade Perrault</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
                     </li>
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/4.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour4.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/4.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Greek hall</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
                     </li>
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/5.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour5.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/5.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Mona Lisa</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
                         </a>
                     </li>
                     <li class="tour">
-                        <a class="tour__link" href="">
-                            <img class="tour__img" src="./src/img/tour/6.jpg" width="440" height="285">
+                        <a class="tour__link" href="tour6.html" target="_blank">
+                            <div class="tour__img-wrapper">
+                                <img class="tour__img" src="./src/img/tour/6.jpg" width="440" height="285" alt="tour image">
+                            </div>
                             <h3 class="tour__title">Night Palace</h3>
                             <p class="tour__type">360° Virtual Tour</p>
                             <p class="tour__desc">Google Street Panorama View</p>
@@ -157,25 +170,27 @@
                     <video class="video-player__video" poster="src/img/video_player/poster0.jpg">
                         <source src="src/video/video0.mp4" type="video/mp4">
                     </video>
-                    <div class="video-player__middle-button"></div>
+                    <button class="video-player__middle-button"></button>
                     <div class="player-controls">
                         <button class="player-controls__play" type="button">
-                            <span class="player-controls__button player-controls__button_play"></span>
-                            <span class="player-controls__button player-controls__button_pause"></span>
+                            <object class="player-controls__button_play" type="image/svg+xml" data="src/img/video_player/play.svg" width="23" height="36"></object>
+                            <object class="visually-hidden player-controls__button_pause" type="image/svg+xml" data="src/img/video_player/pause.svg" width="23" height="36"></object>
                         </button>
                         <div class="player-controls__timer">
                             <input class="player-controls__range player-controls__range_timer" type="range" name="timer" min="0" max="100" step="1" value="0">
                         </div>
                         <button class="player-controls__mute" type="button">
-                            <span class="player-controls__button player-controls__button_unmute"></span>
-                            <span class="player-controls__button player-controls__button_mute"></span>
+                            <object class="player-controls__button_unmute" type="image/svg+xml"
+                            data="src/img/video_player/volume.svg" width="36" height="36"></object>
+                            <object class="visually-hidden player-controls__button_mute" type="image/svg+xml" data="src/img/video_player/mute.svg" width="36" height="36"></object>
                         </button>
                         <div class="player-controls__volume">
                             <input class="player-controls__range player-controls__range_volume" type="range" name="volume" min="0" max="1" step="0.1" value="0.5">
                         </div>
                         <button class="player-controls__screen" type="button">
-                            <span class="player-controls__button player-controls__button_fullscreen"></span>
-                            <span class="player-controls__button player-controls__button_smallscreen"></span>
+                            <object class="player-controls__button_fullscreen" type="image/svg+xml"
+                            data="src/img/video_player/fullscreen.svg" width="36" height="36"></object>
+                            <object class="visually-hidden player-controls__button_smallscreen" type="image/svg+xml" data="src/img/video_player/smallscreen.svg" width="36" height="36"></object>
                         </button>
                     </div>
                 </div>
@@ -241,13 +256,17 @@
                     </li>
                 </ul>
                 <div class="video-pagination">
-                    <button class="video-pagination__item video-pagination__item_left"></button>
-                    <button class="video-pagination__item video-pagination__item_active"></button>
-                    <button class="video-pagination__item"></button>
-                    <button class="video-pagination__item"></button>
-                    <button class="video-pagination__item"></button>
-                    <button class="video-pagination__item"></button>
-                    <button class="video-pagination__item video-pagination__item_right"></button>
+                    <button class="video-pagination__arrow video-pagination__arrow_left" type="button">
+                        <object type="image/svg+xml" data="src/img/video_player/video_left.svg" width="10"></object>
+                    </button>
+                    <button class="video-pagination__item video-pagination__item_active" type="button" disabled></button>
+                    <button class="video-pagination__item" type="button"></button>
+                    <button class="video-pagination__item" type="button"></button>
+                    <button class="video-pagination__item" type="button"></button>
+                    <button class="video-pagination__item" type="button"></button>
+                    <button class="video-pagination__arrow video-pagination__arrow_right">
+                        <object type="image/svg+xml" data="src/img/video_player/video_right.svg" width="10"></object>
+                    </button>
                 </div>
             </div>
         </section>
@@ -308,7 +327,7 @@
                                 <label class="tickets-form__label tickets-form__label_amount" for="senior-amount">Senior 65+</label>
                                 <div class="amount-block">
                                     <button class="amount-block__button amount-block__button_minus" type="button">&minus;</button>
-                                    <input class="amount-block__number" type="number" id="senior-amount" name="senior tickets amount">
+                                    <input class="amount-block__number" type="number" id="senior-amount" name="senior tickets amount" value="1">
                                     <button class="amount-block__button amount-block__button_plus" type="button">+</button>
                                 </div>
                             </div>
@@ -319,19 +338,18 @@
                 </div>
             </div>
         </section>
-        <section class="parallax">
-            <div class="parallax__wrapper"></div>
-        </section>
+        <article class="parallax">
+        </article>
         <section class="contacts">
             <div class="wrapper">
                 <h2 class="contacts__title">Contacts</h2>
-                <div class="layout-2-column">
-                    <div class="contact-content">
-                        <h4 class="contact-content__title">Palais Royal Musee du Louvre</h4>
-                        <div class="contact-content__links">
-                            <p class="contact-content__text">address:<a class="contact-content__link" href="#">75001 Paris, France</a></p>
-                            <p class="contact-content__text">phone:<a class="contact-content__link" href="tel:330240205050">+33(0) 1 40 20 50 50</a></p>
-                            <p class="contact-content__text">mail:<a class="contact-content__link" href="mailto:info@louvre.fr">info@louvre.fr</a></p>
+                <div class="contacts__layout">
+                    <div class="contacts-content">
+                        <h4 class="contacts-content__title">Palais Royal<br>Musee du Louvre</h4>
+                        <div class="contacts-content__links">
+                            <p class="contacts-content__text">address:&nbsp;<a class="link contacts-content__link" href="#">75001 Paris, France</a></p>
+                            <p class="contacts-content__text">phone:&nbsp;<a class="link contacts-content__link" href="tel:330240205050">+33(0) 1 40 20 50 50</a></p>
+                            <p class="contacts-content__text">mail:&nbsp;<a class="link contacts-content__link" href="mailto:info@louvre.fr">info@louvre.fr</a></p>
                         </div>
                     </div>
                     <img class="contacts__image" src="src/img/map.png" width="960" height="620" alt="address on map">
@@ -340,13 +358,13 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer-info">
-                <div class="logo">
-                    <img class="logo__img" src="./src/img/logo/logo.svg" alt="museum logo">
-                    <span class="logo_text">Louvre</span>
-                </div>
-                <div class="footer-content">
+        <div class="footer__wrapper">
+            <div class="wrapper footer__info">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./src/img/logo/logo.svg" width="50" height="34" alt="museum logo">
+                    <span class="logo__text">Louvre</span>
+                </a>
+                <div class="footer__content">
                     <nav class="footer__navigation">
                         <ul class="navigation">
                             <li class="navigation__item"><a class="link navigation__link">Visiting</a></li>
@@ -357,32 +375,40 @@
                             <li class="navigation__item"><a class="link navigation__link">Contacts</a></li>
                         </ul>
                     </nav>
-                    <div class="footer-social">
-                        <ul class="footer-social__list">
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#"><img class="footer-social__icon" src="src/img/icons/youtube.svg" width="24" height="24" alt="youtube icon"></a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#"><img class="footer-social__icon" src="src/img/icons/instagram.svg" width="24" height="24" alt="instagram icon"></a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#"><img class="footer-social__icon" src="src/img/icons/facebook.svg" width="24" height="24" alt="facebook icon"></a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#"><img class="footer-social__icon" src="src/img/icons/twitter.svg" width="24" height="24" alt="twitter icon"></a>
-                            </li>
-                            <li class="footer-social__item">
-                                <a class="footer-social__link" href="#"><img class="footer-social__icon" src="src/img/icons/pinterest.svg" width="24" height="24" alt="pinterest icon"></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer-social__item">
+                            <a class="footer-social__link" href="https://www.youtube.com/user/louvre" aria-label="youtube icon">
+                                <object type="image/svg+xml" data="src/img/icons/youtube.svg" width="24"></object>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a class="footer-social__link" href="https://www.instagram.com/museelouvre/" aria-label="instagram icon">
+                                <object type="image/svg+xml" data="src/img/icons/instagram.svg" width="24"></object>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a class="footer-social__link" href="https://www.facebook.com/museedulouvre" aria-label="facebook icon">
+                                <object type="image/svg+xml" data="src/img/icons/facebook.svg" width="24"></object>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a class="footer-social__link" href="http://twitter.com/museelouvre" aria-label="twitter icon">
+                                <object type="image/svg+xml" data="src/img/icons/twitter.svg" width="24"></object>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a class="footer-social__link" href="https://www.pinterest.fr/museedulouvre/" aria-label="pinterest icon">
+                                <object type="image/svg+xml" data="src/img/icons/pinterest.svg" width="24"></object>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-rs">
-                <p class="footer-rs__copuright">&copy;2021</p>
-                <a class="footer-rs_rs-link" href="#">The Rolling Scopes School</a>
-                <a class="footer-rs__github" href="#">Yuliya Karuk</a>
-            </div>
+        </div>
+        <div class="wrapper footer-rs">
+            <p class="footer-rs__copyright">&copy;&nbsp;2021</p>
+            <a class="link footer-rs__rs-link" href="#">The Rolling Scopes School</a>
+            <a class="link footer-rs__github" href="#">Yuliya Karuk</a>
         </div>
     </footer>
 </body>

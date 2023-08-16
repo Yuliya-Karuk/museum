@@ -3,6 +3,17 @@
     flex-direction: column;
 }
 
+.tour__img-wrapper {
+    overflow: hidden;
+}
+
+.tour__img {
+    @extend %transition;
+    .tour__link:hover & {
+        transform: scale(1.2);
+    }
+}
+
 .tour__title {
     position: relative;
     margin: 20px 0;
@@ -14,6 +25,10 @@
         left: 0;
         bottom: -11px;
         background-color: $color-bg-primary;
+        @extend %transition;
+    }
+    .tour__link:hover &::after {
+        width: 100%;
     }
 }
 

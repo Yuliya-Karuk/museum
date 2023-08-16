@@ -10,11 +10,14 @@
 @import "base/logo";
 @import "base/buttons";
 @import "base/inputs";
+@import "base/links";
 
 // Layouts
 @import "layout/wrapper";
 @import "layout/header";
 @import "layout/columns";
+@import "layout/footer";
+@import "layout/iframe";
 
 // Components
 @import "components/welcome";
@@ -30,3 +33,5 @@
 @import "components/video-slider";
 @import "components/gallery";
 @import "components/tickets";
+@import "components/parallax";
+@import "components/contacts";

@@ -19,7 +19,7 @@
     color: $color-bg-light;
 }
 
-.carousel-buttons {
+.carousel__buttons {
     display: flex;
     align-items: center;
     column-gap: 25px;
@@ -29,12 +29,17 @@
     width: 16px;
     height: 16px;
     background-color: $color-bg-light;
-    &_active {
+    @extend %transition;
+    &:not(:disabled):hover {
         background-color: $color-font-gold;
+    }
+    &_active {
+        background-color: $color-button-active;
+        cursor: auto;
     }
 }
 
-.carousel-arrows {
+.carousel__arrows {
     margin-left: 5px;
     display: flex;
     align-items: center;
@@ -45,10 +50,11 @@
     display: block;
     width: 40px;
     height: 8px;
-    &_left {
-        background-image: url(../img/icons/arrow_left.svg);
-    }
-    &_right {
-        background-image: url(../img/icons/arrow_right.svg);
+    cursor: pointer;
+    &:hover {
+        .svg-path {
+            @extend %transition;
+            fill: $color-font-gold;
+        }
     }
 }

@@ -4,6 +4,14 @@
 
     display: flex;
     column-gap: 55px;
+    .footer__navigation & {
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 170px;
+        height: 130px;
+        width: 363px;
+    }
 }
 
 .navigation__link {

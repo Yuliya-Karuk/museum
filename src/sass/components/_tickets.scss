@@ -70,6 +70,10 @@
 .amount-block__button {
     @include font("Roboto", 3.2rem, 400, normal, normal);
     color: $color-font-black;
+    @extend %transition;
+    &:hover {
+        text-shadow: 0 0 2px $color-bg-dark;
+    }
 }
 
 .amount-block__number {

@@ -1,0 +1,11 @@
+.link {
+    @include font("Roboto", 2.2rem, 100, 2.2rem, 0.2rem);
+    color: $color-bg-light;
+    @extend %transition;
+    &:hover {
+        color: $color-font-gold;
+    }
+    &:active {
+        color: $color-link-active;
+    }
+}

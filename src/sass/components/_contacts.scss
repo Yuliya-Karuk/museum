@@ -1,0 +1,29 @@
+.contacts__title {
+    @extend %section-title;
+}
+
+.contacts__layout {
+    display: flex;
+    column-gap: 200px;
+}
+
+.contacts-content {
+    width: 280px;
+}
+
+.contacts-content__title {
+    margin-bottom: 50px;
+}
+
+.contacts-content__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.contacts-content__text,
+.contacts-content__link {
+    @include font("Roboto", 2.2rem, 300, normal);
+    color: $color-font-black;
+    display: flex;
+}
