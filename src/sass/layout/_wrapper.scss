@@ -1,5 +1,11 @@
 .wrapper {
     max-width: $desktop;
     margin: 0 auto;
-    @extend %section-padding;
+    padding: 75px 0;
+    @include media-laptop {
+        padding: 60px 20px;
+    }
+    @include media-tablet {
+        padding: 40px 20px;
+    }
 }

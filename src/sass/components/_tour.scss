@@ -1,9 +1,18 @@
 .tour {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    @include media-laptop {
+        width: 38.5%;
+    }
+    @include media-tablet {
+        width: unset;
+        flex-shrink: 0;
+    }
 }
 
 .tour__img-wrapper {
+    font-size: 0;
     overflow: hidden;
 }
 
@@ -12,20 +21,31 @@
     .tour__link:hover & {
         transform: scale(1.2);
     }
+    @include media-laptop {
+        width: 330px;
+        max-width: 100%;
+    }
+    @include media-tablet {
+        width: 280px;
+        height: 180px;
+    }
 }
 
 .tour__title {
     position: relative;
-    margin: 20px 0;
+    margin: 25px 0 22px;
     &::after {
         content: '';
         position: absolute;
         width: 300px;
         height: 2px;
         left: 0;
-        bottom: -11px;
+        bottom: -12px;
         background-color: $color-bg-primary;
         @extend %transition;
+        @include media-laptop {
+            width: 150px;
+        }
     }
     .tour__link:hover &::after {
         width: 100%;
@@ -36,9 +56,21 @@
     margin-bottom: 10px;
     @include font("Roboto", 2.2rem, 100, normal, normal, capitalize);
     color: $color-font-black;
+    @include media-laptop {
+        font-size: 2.0rem;
+    }
+    @include media-tablet {
+        font-size: 1.8rem;
+    }
+    @include media-mobile {
+        font-size: 1.6rem;
+    }
 }
 
 .tour__desc {
     @include font("Roboto", 1.8rem, 100, normal, normal, capitalize);
     color: $color-font-black;
+    @include media-laptop {
+        font-size: 1.6rem;
+    }
 }

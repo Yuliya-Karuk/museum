@@ -3,6 +3,9 @@
 
     display: flex;
     justify-content: flex-end;
+    @include media-tablet {
+        flex-wrap: wrap;
+    }
 }
 
 .slider__images {
@@ -23,5 +26,17 @@
         height: 100%;
         width: 100%;
         background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+    }
+    @include media-tablet {
+        background: none;
+    }
+}
+
+.slider__img {
+    @include media-laptop {
+        width: 700px;
+    }
+    @include media-tablet {
+        width: 100%;
     }
 }

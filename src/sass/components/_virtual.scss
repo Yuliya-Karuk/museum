@@ -1,7 +1,18 @@
 .virtual-tour__title {
-    @extend %section-title;
+    @include section-title;
 }
 
 .virtual__layout {
     row-gap: 75px;
+    @include media-laptop {
+        gap: 60px;
+    }
+    @include media-tablet {
+        gap: 40px;
+        column-gap: 55px;
+        margin-bottom: 38px;
+    }
+    @include media-mobile {
+        margin-bottom: 0px;
+    }
 }

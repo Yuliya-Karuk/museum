@@ -1,3 +1,7 @@
 .layout-3-column {
     @include columns(440px);
+    @include media-laptop {
+        @include columns(330px);
+        justify-content: center;
+    }
 }

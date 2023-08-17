@@ -1,6 +1,7 @@
 .picture-slider {
     position: relative;
     font-size: 0;
+    overflow: hidden;
 }
 
 .picture-slider__img {
@@ -37,4 +38,13 @@
     width: 39px;
     height: 700px;
     background-image: url(../img/icons/explore_slider.svg);
+    background-position: center;
+    background-size: cover;
+    @include media-tablet {
+        height: 95vw;
+        width: 5vw;
+    }
+    // @include media-mobile {
+    //     background-image: url(../img/icons/explore_slider_small.svg);
+    // }
 }

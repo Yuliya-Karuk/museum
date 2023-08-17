@@ -7,6 +7,12 @@
     }
 }
 
+.logo__img {
+    @include media-mobile {
+        width: 29px;
+    }
+}
+
 .logo__text {
     @include font("Forum", 2.8rem, 400, normal, 0.5rem, uppercase);
     color: $color-bg-light;

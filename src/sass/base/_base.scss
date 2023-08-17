@@ -39,16 +39,46 @@ body {
 h1 {
     @include font("Forum", 2.8rem, 400, normal, 0.5rem, uppercase);
     color: $color-bg-light;
+    @include media-tablet {
+        line-height: 4rem;
+    }
+    @include media-mobile {
+        font-size: 1.6rem;
+        line-height: normal;
+    }
 }
 
 h2 {
     @include font("Forum", 8rem, 400, 9rem, 0.5rem, uppercase);
     color: $color-font-gold;
+    @include media-laptop {
+        font-size: 5rem;
+        line-height: 7.5rem;
+    }
+    @include media-tablet {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    @include media-mobile {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
 }
 
 h3 {
     @include font("Forum", 3.2rem, 400, normal, 0.5rem, uppercase);
     color: $color-font-black;
+    @include media-laptop {
+        font-size: 2.8rem;
+        letter-spacing: 0.3rem;
+    }
+    @include media-tablet {
+        font-size: 2.2rem;
+    }
+    @include media-mobile {
+        font-size: 1.8rem;
+        letter-spacing: 0.5rem;
+    }
 }
 
 h4 {
@@ -68,4 +98,13 @@ img {
 p {
     @include font("Roboto", 2.2rem, 300, 3.85rem);
     color: $color-bg-light;
+    @include media-laptop {
+        font-size: 2.0rem;
+    }
+    @include media-tablet {
+
+    }
+    @include media-mobile {
+
+    }
 }

@@ -25,3 +25,9 @@
         color: $color-font-gold;
     }
 }
+
+.header__navigation {
+    @include media-laptop {
+        display: none;
+    }
+}

@@ -1,6 +1,9 @@
 .welcome {
     padding-bottom: 60px;
     background-color: $color-bg-dark;
+    @include media-tablet {
+        padding-bottom: 0;
+    }
 }
 
 .welcome__wrapper {
@@ -9,6 +12,13 @@
     display: flex;
     justify-content: flex-end;
     padding: 0;
+    @include media-laptop {
+        padding: 0 20px;
+    }
+    @include media-tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .welcome__content {
@@ -16,19 +26,39 @@
     top: 150px;
     left: 0;
     z-index: 10;
-
     width: 600px;
+    @include media-laptop {
+        top: 50px;
+        left: 20px;
+    }
+    @include media-tablet {
+        position: initial;
+    }
+    @include media-mobile {
+        padding-top: 5px;
+    }
 }
 
 .welcome__button {
     width: fit-content;
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .welcome__title {
     margin-bottom: 25px;
-
     color: $color-bg-light;
-    line-height: 9rem;
+    @include media-laptop {
+        line-height: 9rem;
+    }
+    @include media-tablet {
+        text-align: center;
+        line-height: 6rem;
+    }
+     @include media-mobile {
+        line-height: 4rem;
+    }
 }
 
 .welcome__description {
@@ -37,4 +67,17 @@
     font-size: 2.8rem;
     line-height: normal;
     letter-spacing: 0.2rem;
+    @include media-laptop {
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+    }
+    @include media-tablet {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    @include media-mobile {
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+    }
 }
