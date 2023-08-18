@@ -4,22 +4,79 @@
 
 .footer__info {
     display: flex;
-    column-gap: 140px;
-    padding: 87px 0 0;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 85px 0 0;
+    margin-bottom: 48px;
+    column-gap: 10px;
+    @media screen and (max-width: 1480px) {
+        padding: 62px 20px 0;
+    }
+    @include media-tablet {
+        padding: 50px 20px 0;
+        margin-bottom: 38px;
+    }
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px;
+    }
+    @include media-mobile {
+        padding: 40px 20px 0;
+        row-gap: 32px;
+        justify-content: flex-start;
+    }
 }
 
 .footer__content {
     display: flex;
     justify-content: space-between;
-    flex-basis: 100%;
     align-items: flex-end;
+    column-gap: 20px;
+    width: 1100px;
+    max-width: 76.4%;
+    @include media-laptop {
+        max-width: 75.7%;
+    }
+    @media screen and (max-width: 1020px) {
+        flex-wrap: wrap;
+        row-gap: 42px;
+        justify-content: flex-end;
+    }
+    @include media-tablet {
+        justify-content: center;
+    }
+    @include media-mobile {
+        max-width: 100%;
+        row-gap: 35px;
+    }
+}
+
+.footer__navigation {
+    height: 130px;
+    width: 32.5%;
+    @include media-laptop {
+        width: 41.5%;
+    }
+    @include media-tablet {
+        padding-top: 8px;
+        width: 65%;
+    }
+    @include media-mobile {
+        height: 80px;
+        width: 100%;
+    }
 }
 
 .footer__social-list {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: flex;
     column-gap: 25px;
+    @include media-laptop {
+        margin-bottom: 0;
+    }
+    @include media-mobile {
+        column-gap: 5px;
+    }
 }
 
 .footer-social__link {
@@ -53,13 +110,25 @@
 .footer-rs {
     padding: 50px 0;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    @media screen and (max-width: 1480px) {
+        padding: 50px 20px;
+    }
+    @include media-tablet {
+        padding: 40px 20px;
+    }
 }
 
 .footer-rs__copyright {
     @include font("Roboto", 2.2rem, 100, 2.2rem, 0.2rem);
+    @include media-mobile {
+        font-size: 1.6rem;
+    }
 }
 
 .footer-rs__rs-link {
     margin-left: 60px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }

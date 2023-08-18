@@ -5,6 +5,20 @@
 .tickets__layout {
     display: flex;
     column-gap: 60px;
+    @include media-desktop-additional {
+        column-gap: 40px;
+    }
+    @include media-laptop {
+        column-gap: 80px;
+    }
+    @include media-tablet {
+        column-gap: 60px;
+        row-gap: 40px;
+    }
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .tickets-form {
@@ -13,6 +27,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media-desktop-additional {
+        justify-content: flex-start;
+    }
+    @include media-laptop {
+        width: 175px;
+    }
+    @media screen and (max-width: 767px) {
+        row-gap: 40px;
+        justify-content: center;
+    }
+    @include media-mobile {
+        row-gap: 10px;
+    }
 }
 
 .tickets-form__title {
@@ -21,16 +48,69 @@
     &_amount {
         text-align: end;
         margin-bottom: 25px;
+        @include media-desktop-additional {
+            text-align: start;
+        }
+        @include  media-laptop {
+            margin-bottom: 30px;
+        }
+        @include media-tablet {
+            margin-bottom: 40px;
+        }
+        @include media-mobile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .tickets-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     &_type {
-        width: 270px;
+        width: 70%;
+        margin-bottom: 40px;
+        @include media-desktop-additional {
+            width: 100%;
+        }
+        @include media-laptop {
+            display: none;
+        }
     }
     &_amount {
-        width: 150px;
+        align-content: flex-end;
+        width: 175px;
         margin-bottom: 40px;
+        @include media-laptop {
+            margin-bottom: 0;
+        }
+        @include media-tablet {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.tickets__image {
+    @include media-laptop {
+        width: 71.5%;
+        max-width: 700px;
+        max-height: 440px;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 1020px) {
+        width: 65%;
+    }
+    @include media-tablet {
+        max-width: 444px;
+        max-height: 340px;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    @include media-mobile {
+        height: 160px;
     }
 }
 
@@ -42,6 +122,12 @@
 
 .tickets-form__amount {
     margin-bottom: 10px;
+    @include media-laptop {
+        margin-bottom: 30px;
+    }
+    @include media-mobile {
+        margin-bottom: 20px;
+    }
 }
 
 .amount-block {
@@ -52,6 +138,9 @@
     justify-content: space-between;
     align-items: center;
     border: 3px solid $color-font-black;
+    @include media-laptop {
+        width: 175px;
+    }
 }
 
 .tickets-form__label {
@@ -64,6 +153,13 @@
         margin-bottom: 15px;
         padding-left: 0;
         text-align: start;
+        @include media-laptop {
+            margin-bottom: 10px
+        }
+        @include media-mobile {
+            font-size: 1.6rem;
+            margin-bottom: 14px;
+        }
     }
 }
 
@@ -86,6 +182,18 @@
     flex-basis: 100%;
     text-align: end;
     letter-spacing: 0.165rem;
+    @include media-laptop {
+        text-align: start;
+        margin-bottom: 65px;
+    }
+    @include media-tablet {
+        margin-bottom: 35px;
+    }
+    @include media-mobile {
+        text-align: center;
+        letter-spacing: normal;
+        margin-bottom: 30px;
+    }
 }
 
 .tickets-form__button {

@@ -84,11 +84,23 @@ h3 {
 h4 {
     @include font("Roboto", 2.8rem, 500, normal);
     color: $color-font-black;
+    @include media-laptop {
+        font-size: 2.4rem;
+    }
+    @include media-tablet {
+        font-size: 2.0rem;
+    }
+    @include media-mobile {
+        font-size: 1.6rem;
+    }
 }
 
 strong {
     @include font("Roboto", 2.8rem, 700, normal, normal);
     color: $color-font-black;
+    @include media-mobile {
+        font-size: 1.6rem;
+    }
 }
 
 img {

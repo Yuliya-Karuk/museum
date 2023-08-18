@@ -2,15 +2,31 @@
     background-color: $color-bg-light;
 }
 
+.video-wrapper {
+    overflow: hidden;
+}
+
 .video-journey__content {
     margin-bottom: 75px;
 
     display: flex;
     align-items: center;
     column-gap: 115px;
+    @include media-laptop {
+        margin-bottom: 40px;
+    }
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+    @include media-mobile {
+        margin-bottom: 17px;
+    }
 }
 
 .video-journey__desc {
     width: 49.9%;
     color: $color-font-black;
+    @media screen and (max-width: 1480px) {
+        display: none;
+    }
 }

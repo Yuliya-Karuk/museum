@@ -2,7 +2,7 @@
     max-width: $desktop;
     margin: 0 auto;
     padding: 75px 0;
-    @include media-laptop {
+    @media screen and (max-width: 1480px) {
         padding: 60px 20px;
     }
     @include media-tablet {

@@ -29,6 +29,14 @@
             color: $color-bg-dark;
             background: $color-font-gold;
         }
+        @include media-laptop {
+            padding: 12px 20px;
+            width: 175px;
+            height: 50px;
+        }
+        @include media-mobile {
+            font-size: 1.6rem;
+        }
     }
 
 }

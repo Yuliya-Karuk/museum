@@ -8,9 +8,9 @@
         flex-direction: column;
         flex-wrap: wrap;
         row-gap: 25px;
-        column-gap: 170px;
-        height: 130px;
-        width: 363px;
+        column-gap: unset;
+        height: 100%;
+        align-content: space-between;
     }
 }
 
@@ -23,6 +23,13 @@
     }
     &:active {
         color: $color-font-gold;
+    }
+    @include media-tablet {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+    }
+    @include media-mobile {
+        font-size: 1.6rem;
     }
 }
 

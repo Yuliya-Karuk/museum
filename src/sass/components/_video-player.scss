@@ -2,11 +2,17 @@
     position: relative;
     font-size: 0;
     margin-bottom: 40px;
+    @include media-tablet {
+        margin-bottom: 17px;
+    }
+    @include media-mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .video-player__video {
     width: 100%;
-    height: 650px;
+    aspect-ratio: 1440 / 650;
     object-fit: cover;
     outline: none;
 }
@@ -14,13 +20,24 @@
 .video-player__middle-button {
     position: absolute;
     z-index: 3;
-    top: calc(50% - 150px);
-    left: calc(50% - 220px/2);
-    width: 220px;
-    height: 220px;
-    background: no-repeat center url(../img/video_player/play_middle.png);
+    top: calc(50% - 21%);
+    left: calc(50% - 7.5%);
+    width: 15%;
+    aspect-ratio: 220 / 220;
+    background: no-repeat center url(../img/video_player/play_middle_desktop.svg);
+    background-size: cover;
     cursor: pointer;
     @extend %transition;
+    @include media-tablet {
+        width: 11%;
+        top: calc(50% - 18%);
+        left: calc(50% - 5.5%);
+    }
+    @include media-mobile {
+        width: 13%;
+        top: calc(50% - 24%);
+        left: calc(50% - 6.5%);
+    }
 }
 
 .player-controls {
@@ -31,9 +48,29 @@
     align-items: center;
     column-gap: 50px;
     background-color: $color-font-black;
+    @include media-laptop {
+        padding: 12px 40px;
+        column-gap: 30px;
+    }
+    @include media-tablet {
+        position: relative;
+        padding: 12px 30px;
+    }
+    @include media-mobile {
+        padding: 9px 20px;
+    }
 }
 
 .player-controls__button {
+    @include media-laptop {
+        width: 26px;
+    }
+    @include media-mobile {
+        width: 14px;
+    }
+}
+
+.player-controls__svg {
     cursor: pointer;
     &:hover {
         .svg-path {
@@ -44,11 +81,26 @@
 }
 
 .player-controls__timer {
-    width: 930px;
+    width: 68.5%;
+    @include media-laptop {
+        width: 62%;
+    }
+    @include media-tablet {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .player-controls__volume {
-    width: 155px;
+    width: 11.5%;
+    @include media-laptop {
+        width: 16%;
+    }
+    @include media-tablet {
+        width: 75%;
+    }
 }
 
 .player-controls__range {
@@ -64,5 +116,19 @@
         background: $color-bg-light;
         cursor: pointer;
         -webkit-appearance: none;
+        @include media-laptop {
+            height: 13px;
+            width: 13px;
+        }
+        @include media-mobile {
+            height: 10px;
+            width: 10px;
+        }
+    }
+    @include media-laptop {
+        height: 5px;
+    }
+    @include media-mobile {
+        height: 4px;
     }
 }

@@ -12,7 +12,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 0;
-    @include media-laptop {
+    @media screen and (max-width: 1480px) {
         padding: 0 20px;
     }
     @include media-tablet {

@@ -163,8 +163,8 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="video-journey">
-            <div class="wrapper">
+        <section class="video-journey">
+            <div class="wrapper video-wrapper">
                 <div class="video-journey__content">
                     <h2 class="video-journey__title">Video journey</h2>
                     <p class="video-journey__desc">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
@@ -176,24 +176,24 @@
                     <button class="video-player__middle-button"></button>
                     <div class="player-controls">
                         <button class="player-controls__play" type="button">
-                            <object class="player-controls__button_play" type="image/svg+xml" data="src/img/video_player/play.svg" width="23" height="36"></object>
-                            <object class="visually-hidden player-controls__button_pause" type="image/svg+xml" data="src/img/video_player/pause.svg" width="23" height="36"></object>
+                            <object class="player-controls__button player-controls__button_play" type="image/svg+xml" data="src/img/video_player/play.svg" width="23" height="36"></object>
+                            <object class="visually-hidden player-controls__button player-controls__button_pause" type="image/svg+xml" data="src/img/video_player/pause.svg" width="23" height="36"></object>
                         </button>
                         <div class="player-controls__timer">
                             <input class="player-controls__range player-controls__range_timer" type="range" name="timer" min="0" max="100" step="1" value="0">
                         </div>
                         <button class="player-controls__mute" type="button">
-                            <object class="player-controls__button_unmute" type="image/svg+xml"
+                            <object class="player-controls__button player-controls__button_unmute" type="image/svg+xml"
                             data="src/img/video_player/volume.svg" width="36" height="36"></object>
-                            <object class="visually-hidden player-controls__button_mute" type="image/svg+xml" data="src/img/video_player/mute.svg" width="36" height="36"></object>
+                            <object class="visually-hidden player-controls__button player-controls__button_mute" type="image/svg+xml" data="src/img/video_player/mute.svg" width="36" height="36"></object>
                         </button>
                         <div class="player-controls__volume">
                             <input class="player-controls__range player-controls__range_volume" type="range" name="volume" min="0" max="1" step="0.1" value="0.5">
                         </div>
                         <button class="player-controls__screen" type="button">
-                            <object class="player-controls__button_fullscreen" type="image/svg+xml"
+                            <object class="player-controls__button player-controls__button_fullscreen" type="image/svg+xml"
                             data="src/img/video_player/fullscreen.svg" width="36" height="36"></object>
-                            <object class="visually-hidden player-controls__button_smallscreen" type="image/svg+xml" data="src/img/video_player/smallscreen.svg" width="36" height="36"></object>
+                            <object class="visually-hidden player-controls__button player-controls__button_smallscreen" type="image/svg+xml" data="src/img/video_player/smallscreen.svg" width="36" height="36"></object>
                         </button>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                 </ul>
                 <div class="video-pagination">
                     <button class="video-pagination__arrow video-pagination__arrow_left" type="button">
-                        <object type="image/svg+xml" data="src/img/video_player/video_left.svg" width="10"></object>
+                        <object class="video-pagination__object" type="image/svg+xml" data="src/img/video_player/video_left.svg" width="10"></object>
                     </button>
                     <button class="video-pagination__item video-pagination__item_active" type="button" disabled></button>
                     <button class="video-pagination__item" type="button"></button>
@@ -268,12 +268,12 @@
                     <button class="video-pagination__item" type="button"></button>
                     <button class="video-pagination__item" type="button"></button>
                     <button class="video-pagination__arrow video-pagination__arrow_right">
-                        <object type="image/svg+xml" data="src/img/video_player/video_right.svg" width="10"></object>
+                        <object class="video-pagination__object" type="image/svg+xml" data="src/img/video_player/video_right.svg" width="10"></object>
                     </button>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="gallery">
+        </section>
+        <section class="gallery">
             <div class="wrapper gallery__wrapper">
                 <h2 class="gallery__title">Art Gallery</h2>
                 <div class="gallery__layout">
@@ -295,8 +295,8 @@
                 </div>
                 <div class="gallery__overlay"></div>
             </div>
-        </section> -->
-        <!-- <section class="tickets">
+        </section>
+        <section class="tickets">
             <div class="wrapper">
                 <h2 class="tickets__title">BUY TICKETS</h2>
                 <div class="tickets__layout">
@@ -335,15 +335,16 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <strong class="tickets-form__total">Total&nbsp;&euro;<span class="tickets-form__total-number">220</span></strong>
+                        <strong class="tickets-form__total">Total&nbsp;&euro;&nbsp;<span class="tickets-form__total-number">220</span></strong>
                         <button class="button button_square tickets-form__button" type="button">Buy Now</button>
                     </form>
                 </div>
             </div>
-        </section> -->
-        <!-- <article class="parallax">
-        </article> -->
-        <!-- <section class="contacts">
+        </section>
+        <article class="parallax">
+            <!-- <div class="parallax__img"></div> -->
+        </article>
+        <section class="contacts">
             <div class="wrapper">
                 <h2 class="contacts__title">Contacts</h2>
                 <div class="contacts__layout">
@@ -358,9 +359,9 @@
                     <img class="contacts__image" src="src/img/map.png" width="960" height="620" alt="address on map">
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__wrapper">
             <div class="wrapper footer__info">
                 <a class="logo" href="#">
@@ -413,6 +414,6 @@
             <a class="link footer-rs__rs-link" href="#">The Rolling Scopes School</a>
             <a class="link footer-rs__github" href="#">Yuliya Karuk</a>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
